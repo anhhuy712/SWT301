@@ -1,0 +1,11 @@
+username,password,email,expected
+john123,pass123,john@example.com,true
+shortpw,123,john@example.com,false
+invalidemail1,pass123,johnexample.com,false
+invalidemail2,pass123,john@.com,false
+missingat,pass123,johnexamplecom,false
+with.space,pass123, john@example.com ,true
+bob123,1234567,bobmail.com,false
+strongUser,Pass@1234,strong.email@domain.com,true
+onlyemail,test123,onlyemail.com,false
+carol,password,carol@domain.com,true
